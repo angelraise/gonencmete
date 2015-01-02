@@ -1,2 +1,78 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+    <!-- Fullscreen Page 
+    ================================================== -->
+    <div id="fullscreen" class="home"> <!-- Full Screen Home Page -->
+      <div id="overlay" class="bg"></div> <!-- Color Overlay -->
+        
+        <div id="home" class="container"> <!-- Start Container -->
+          <div class="row"> <!-- Start Row -->
+
+            <div id="left" class="col-sm-12 col-md-12"> <!--- Left Content -->
+            
+              <div id="menu" class="fa fa-bars fa-2x" data-toggle="offcanvas" data-target=".navmenu" data-canvas="body"></div>
+              <div id="page-detail" class="text-center">
+
+                <div id="homeslider" class="carousel slide" data-ride="carousel">
+
+                  <!-- Wrapper for slides -->
+                  <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                      <div class="carousel-caption">
+                        <h4>Welcome to Bloggler</h4>
+                        <hr>
+                        <h1>The Best Photography <br>Template</h1>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="carousel-caption">
+                        <h4>This is a PhotoBlog</h4>
+                        <hr>
+                        <h1>A Simple, Unique and <br>Beautiful Theme</h1>
+                      </div>
+                    </div>
+                    <div class="item">
+                      <div class="carousel-caption">
+                        <h4>Buy the Theme Now</h4>
+                        <hr>
+                        <h1>Exclusively Made For Photographers</h1>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="space"></div>
+                <ul class="tags">
+                  <li><a href="#">Photography</a></li>
+                  <li><a href="#">Design</a></li>
+                  <li><a href="#">Branding</a></li>
+                </ul>
+                <div class="space"></div>
+                <h6>Share This:</h6>
+                <ul class="social-links">
+                  <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                  <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                  <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                  <li><a href="#"><i class="fa fa-skype"></i></a></li>
+                  <li><a href="#"><i class="fa fa-linkedin"></i></a></li>
+                  <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                  <li><a href="#"><i class="fa fa-behance"></i></a></li>
+                </ul>
+              </div>
+            </div> <!--- End Left Content -->
+          
+          </div> <!-- End Row -->
+        </div> <!-- End Container -->
+
+    </div> <!--- End Fullscreen Page -->
+
+
+    <script type="text/javascript">
+      //Home Page BG Slideshow
+      //-----------------------------------
+      $.backstretch([
+            "http://placehold.it/1600x750"
+          , "http://placehold.it/1600x750"
+          , "http://placehold.it/1600x750"
+        ], {duration: 3000, fade: 750});
+    </script>
+  </body>
+</html>

@@ -1,14 +1,72 @@
 <!DOCTYPE html>
-<html>
-<head>
-  <title>Gonencmete</title>
-  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= csrf_meta_tags %>
-</head>
-<body>
+<html lang="en">
+  <head>
+    <!-- Basic Page Needs
+    ================================================== -->
+    <meta charset="utf-8">
+    <!--[if IE]><meta http-equiv="x-ua-compatible" content="IE=9" /><![endif]-->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bloggler - Home Page</title>
+    <meta name="description" content="Bloggler - Photo Blog is a clean and minimalist photography blog perfectly designed for photographers and bloggers. Bloggler is beautiful, clean and very classic design.">
+    <meta name="keywords" content="photoblog, psd, portfolio, photography, photographer, unique, creative, blog, minimal, beautiful theme">
+    <meta name="author" content="JLP Media">
+    
+    <!-- Favicons
+    ================================================== -->
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/apple-touch-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/apple-touch-icon-114x114.png">
 
-<%= yield %>
+    <!-- Bootstrap 
+    ================================================== -->
+    <link rel="stylesheet" type="text/css" href="assets/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="assets/jasny-bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="assets/jquery.mCustomScrollbar.css" />
+    <link rel="stylesheet" type="text/css" href="assets/font-awesome.css">
 
-</body>
+    <!-- Custom Css 
+    ================================================== -->
+    <link rel="stylesheet" type="text/css" href="assets/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/responsive.css">
+
+    <!-- Google Fonts 
+    ================================================== -->
+    <link href='http://fonts.googleapis.com/css?family=Leckerli+One' rel='stylesheet' type='text/css'>
+
+    <!-- Modernizr  JS
+    ================================================== -->
+    <script type="text/javascript" src="assets/modernizr.custom.js"></script>
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <!-- Preloader
+    ================================================== -->
+    <div id="preloader">
+      <div id="status">&nbsp;</div>
+    </div>
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script type="text/javascript" src="assets/jquery.1.11.1.js"></script>
+  
+    <!-- Bootstrap Js Compiled Plugins -->
+    <script type="text/javascript" src="assets/bootstrap.min.js"></script>
+
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script type="text/javascript" src="assets/jquery.easing.min.js"></script>
+    <script type="text/javascript" src="assets/SmoothScroll.js"></script>   
+    <script type="text/javascript" src="assets/jquery.mCustomScrollbar.js"></script>
+
+    <script type="text/javascript" src="assets/backstretch.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&amp;libraries=places"></script>
+    <script type="text/javascript" src="assets/jasny-bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/main.js"></script>
+<%= yield %>  
 </html>
